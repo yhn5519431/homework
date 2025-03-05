@@ -1,11 +1,102 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh">
 <head>
     <meta charset="UTF-8">
-    <title>三小市集</title>
+    <title>三小市集-暫時維護中</title>
+    <style>
+        body {
+            font-family: '微軟正黑體', sans-serif;
+            background-color: #795548;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 50px 50px;
+            background-color: #a52c00;
+            color: #fff;
+            text-align: center;
+        }
+
+        .title {
+            width: 800px;
+            height: 300px;
+        }
+
+        .footer-image {
+            display: block;
+            margin: 2em auto 0;
+            width: 15%;
+        }
+
+        .message {
+            text-align: center;
+            color: #fff;
+            font-size: 80px; /*文字大小*/
+            margin: 20px;
+            line-height: 300px;
+            padding: 20px;
+        }
+
+        /* 載入中的圓形動畫 */
+        .loading-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 300px;
+        }
+
+        .loading-ring {
+            border: 8px solid #f3f3f3; /* 背景顏色 */
+            border-top: 8px solid #3498db; /* 進度條顏色 */
+            border-radius: 50%;
+            width: 450px;
+            height: 450px;
+            animation: spin 1s linear infinite;
+        }
+
+        /* 動畫設定，讓圓圈旋轉 */
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        .loading-text {
+            position: absolute;
+            font-size: 100px; /* 文字大小 */
+            color: #3498db; /* 文字顏色 */
+        }
+    </style>
 </head>
 <body>
-<img class = "title" src="imgs/original.png" alt="三小市集"
+<div class="header-container">
+    <img class="title" src="image/original.png" alt="三小市集">
+    <img class="title" src="image/original.png" alt="三小市集">
+    <img class="title" src="image/original.png" alt="三小市集">
+    <img class="title" src="image/original.png" alt="三小市集">
+    <img class="title" src="image/original.png" alt="三小市集">
+</div>
+
+<div class="message">
+    親愛的顧客，
+    <br>
+    感謝您對三小市集的支持！目前我們的網站正在進行維護，為了提供您更好的服務，我們將會暫時下線。
+    <br>
+    請您耐心等候，我們會儘快回來！謝謝!!
+</div>
+
+
+<div class="loading-container">
+    <div class="loading-ring"></div>
+    <div class="loading-text">載入中...</div> <!-- 在圓圈內顯示文字 -->
+</div>
+
+<img class="footer-image" src="image/sorry.png" alt="兔子">
 
 </body>
 </html>
