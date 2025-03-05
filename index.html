@@ -5,69 +5,69 @@
     <title>三小市集-暫時維護中</title>
     <style>
         body {
-            font-family: '微軟正黑體', sans-serif;
-            background-color: #795548;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            height: 100vh;
-            margin: 0;
+            font-family: '微軟正黑體', sans-serif;/* 設定頁面字體 */
+            background-color: #795548;/*底色*/
+            display: flex;  /*使用 Flexbox 進行布局*/
+            flex-direction: column; /*垂直排列元素*/
+            justify-content: space-between; /*上下分布*/
+            height: 100vh;/*頁面高度為視窗的100%*/
+            margin: 0; /*去除頁面邊距*/
         }
 
         .header-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 50px 50px;
-            background-color: #a52c00;
-            color: #fff;
-            text-align: center;
+            display: flex; /*使用 Flexbox 排列圖片*/
+            justify-content: center; /*水平居中*/
+            align-items: center; /*垂直居中*/
+            padding: 50px 50px; /*添加內邊距*/
+            background-color: #a52c00; /*頁面頭部背景色*/
+            color: #fff; /*頁面頭部文字顏色*/
+            text-align: center;  /*文字居中*/
         }
 
         .title {
-            width: 800px;
-            height: 300px;
+            width: 800px;/*每個圖片的寬度*/
+            height: 300px; /*每個圖片的高度*/
         }
 
         .footer-image {
-            display: block;
-            margin: 2em auto 0;
-            width: 15%;
+            display: block; /*顯示為塊級元素*/
+            margin: 2em auto 0;   /*設置圖片上下外邊距，自動居中*/
+            width: 15%;  /*設置圖片寬度*/
         }
 
         .message {
-            text-align: center;
-            color: #fff;
+            text-align: center;   /* 文字居中* /
+            color: #fff; / *文字顏色為白色 */
             font-size: 80px; /*文字大小*/
-            margin: 20px;
-            line-height: 300px;
-            padding: 20px;
+            margin: 20px; /*外邊距*/
+            line-height: 300px; /*行高*/
+            padding: 20px; /*內邊距*/
         }
 
         /* 載入中的圓形動畫 */
         .loading-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 300px;
+            display: flex; /*使用 Flexbox 進行排列*/
+            justify-content: center; /*水平居中*/
+            align-items: center; /*垂直居中*/
+            height: 300px; /*設置容器高度*/
         }
 
         .loading-ring {
             border: 8px solid #f3f3f3; /* 背景顏色 */
             border-top: 8px solid #3498db; /* 進度條顏色 */
-            border-radius: 50%;
-            width: 450px;
-            height: 450px;
-            animation: spin 1s linear infinite;
+            border-radius: 50%; /*使進度圈變圓*/
+            width: 450px; /*設定圓形的寬度*/
+            height: 450px; /*設定圓形的高度*/
+            animation: spin 1s linear infinite;  /*添加旋轉動畫*/
         }
 
         /* 動畫設定，讓圓圈旋轉 */
         @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
+            0% { transform: rotate(0deg); } /*起始狀態*/
+            100% { transform: rotate(360deg); } /*旋轉 360 度*/
         }
         .loading-text {
-            position: absolute;
+            position: absolute;  /*文字絕對定位*/
             font-size: 100px; /* 文字大小 */
             color: #3498db; /* 文字顏色 */
         }
@@ -93,7 +93,7 @@
 
 <div class="loading-container">
     <div class="loading-ring"></div>
-    <div class="loading-text">載入中...</div> <!-- 在圓圈內顯示文字 -->
+    <div class="loading-text">載入中...</div>
 </div>
 
 <img class="footer-image" src="image/sorry.png" alt="兔子">
